@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Selected CSV file</title>
+</head>
+
+<body>
+
+{{ csvfile }}
+{{ csvpath }}
+<form action="{% url 'app:computation' %}" method="POST">
+    {% csrf_token %}
+
+    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+    <input type="submit" class="btn" value="Computation">
+</form>
+
+{% comment %}<form action="{% url 'app:visualisation' %}" method="POST">
+    {% csrf_token %}
+
+    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+    <input type="submit" class="btn" value="Visualisation">
+</form>
+
+<form action="{% url 'app:learning' %}" method="POST">
+    {% csrf_token %}
+
+    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+    <input type="submit" class="btn" value="Machine Learning">
+</form>{% endcomment %}
+
+
+</body>
+
+</html>

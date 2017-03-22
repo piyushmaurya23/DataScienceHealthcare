@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compuataion</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Mean</th>
+        <th>Median</th>
+        <th>Standard Deviation</th>
+    </tr>
+
+    {% for num,mean,median,std in numlist %}
+        <tr>
+            <td>{{ num }}</td>
+            <td>{{ mean }}</td>
+            <td>{{ median }}</td>
+            <td>{{ std }}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

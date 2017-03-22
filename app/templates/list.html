@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Minimal Django File Upload Example</title>
+</head>
+
+<body>
+<!-- List of uploaded documents -->
+{% if documents %}
+    <ul>
+        {% for document in documents %}
+            <li>{{ document.csvfile.name }}</li>
+            <form action="{% url 'app:selected' %}" method="POST">
+                {% csrf_token %}
+
+                <input id="csvfile" type="hidden" name="csvfile" value="{{ document.csvfile.url }}">
+                <input type="submit" class="btn" value="Select this file">
+            </form>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No documents.</p>
+{% endif %}
+
+<!-- Upload form. Note enctype attribute! -->
+<form action="{% url 'app:list' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ form.non_field_errors }}</p>
+
+    <p>{{ form.csvfile.label_tag }} {{ form.csvfile.help_text }}</p>
+
+    <p>
+        {{ form.csvfile.errors }}
+        {{ form.csvfile }}
+    </p>
+
+    <p><input type="submit" value="Upload"/></p>
+</form>
+</body>
+
+</html>
