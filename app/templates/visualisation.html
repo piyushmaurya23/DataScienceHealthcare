@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph</title>
+</head>
+<body>
+
+
+{% for attribute in non_numeric_list %}
+{{ attribute }}
+<form action="{% url 'app:graph' %}" method="POST">
+    {% csrf_token %}
+
+    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvfile }}">
+    <input id="attribute" type="hidden" name="attribute" value="{{ attribute }}">
+    <input type="submit" class="btn" value="{{ attribute }}">
+</form>
+
+{% endfor %}
+
+</body>
+</html>

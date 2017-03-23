@@ -1,5 +1,8 @@
 import pandas as pd
-
+import seaborn as sns
+from io import BytesIO
+import base64
+import matplotlib.pyplot as plt
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
@@ -54,7 +57,6 @@ def computation(request):
     df = pd.read_csv(csvfile)
     numerics = ['int8', 'int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     numeric_df = df.select_dtypes(include=numerics)
-    num_mean = numeric_df.mean()
 
     num_list = numeric_df.columns.values
 
@@ -76,19 +78,44 @@ def computation(request):
 
     return render(request, 'computation.html', context)
 
-# def visualisation(request):
-#     if request.method == "POST":
-#         csvfile = request.POST.get('csvfile')
-#
-#     df = pd.read_csv(csvfile)
 
-# Create your views here.
+def visualisation(request):
+    if request.method == "POST":
+        csvfile = request.POST.get('csvfile')
 
-# def upload(request):
-#     if request.POST and request.FILES:
-#         csvfile = request.FILES['csv_file']
-#         dialect = csv.Sniffer().sniff(codecs.EncodedFile(csvfile, "utf-8").read(1024))
-#         csvfile.open()
-#         reader = csv.reader(codecs.EncodedFile(csvfile, "utf-8"), delimiter=',', dialect=dialect)
-#
-#     return render(request, "index.html", locals())
+    df = pd.read_csv(csvfile)
+    numerics = ['int8', 'int16', 'int32', 'int64', 'float16', 'float32', 'float64']
+    non_numeric_df = df.select_dtypes(exclude=numerics)
+    non_numeric_list = non_numeric_df.columns.values
+    # image = BytesIO()
+    # sns.set_style("dark")
+    # sns.countplot(non_numeric_df['Product'])
+    # y = [1, 2, 3, 4]
+    # x = [3, 2, 4, 5]
+    # plt.plot(x, y)
+    # plt.savefig(image, format='png')
+    # image.seek(0)
+    # plot_url = base64.b64encode(image.getvalue())
+    context = {
+        'csvfile': csvfile,
+        'non_numeric_list': non_numeric_list,
+    }
+
+    return render(request, 'visualisation.html', context)
+
+
+def graph(request):
+    if request.method == "POST":
+        csvfile = request.POST.get('csvfile')
+        attribute = request.POST.get('attribute')
+
+    df = pd.read_csv(csvfile)
+
+    image = BytesIO()
+    sns.set_style("dark")
+    sns.countplot(df[attribute])
+    plt.savefig(image, format='png')
+    image.seek(0)
+    plot_url = base64.b64encode(image.getvalue())
+
+    return render(request, 'graph.html', {'plot_url': plot_url})

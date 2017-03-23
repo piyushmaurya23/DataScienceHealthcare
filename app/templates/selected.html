@@ -16,19 +16,21 @@
     <input type="submit" class="btn" value="Computation">
 </form>
 
-{% comment %}<form action="{% url 'app:visualisation' %}" method="POST">
+<form action="{% url 'app:visualisation' %}" method="POST">
     {% csrf_token %}
 
     <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
     <input type="submit" class="btn" value="Visualisation">
 </form>
 
+{% comment %}
 <form action="{% url 'app:learning' %}" method="POST">
     {% csrf_token %}
 
     <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
     <input type="submit" class="btn" value="Machine Learning">
-</form>{% endcomment %}
+</form>
+{% endcomment %}
 
 
 </body>
