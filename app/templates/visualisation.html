@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Graph</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 
 
 {% for attribute in non_numeric_list %}
@@ -19,5 +15,4 @@
 
 {% endfor %}
 
-</body>
-</html>
+{% endblock content %}
