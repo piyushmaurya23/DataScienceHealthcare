@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-
+<h5>Select any attribute to visualise its graph:</h5>
+    <br>
+<div class="row">
 {% for attribute in non_numeric_list %}
-{{ attribute }}
+
+<div class="col s4">
+
 <form action="{% url 'app:graph' %}" method="POST">
     {% csrf_token %}
 
@@ -12,7 +15,8 @@
     <input id="attribute" type="hidden" name="attribute" value="{{ attribute }}">
     <input type="submit" class="btn" value="{{ attribute }}">
 </form>
-
+    <br>
+</div>
 {% endfor %}
-
+    </div>
 {% endblock content %}

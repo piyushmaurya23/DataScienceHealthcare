@@ -2,38 +2,45 @@
 
 {% block content %}
 
+    <div class="row">
+        <div class="col s6">
+            {% if documents %}
+<h4>Uploaded files:</h4>
+                <ul>
+                    {% for document in documents %}
 
+                        <form action="{% url 'app:selected' %}" method="POST">
+                            {% csrf_token %}
 
-{% if documents %}
-    <ul>
-        {% for document in documents %}
-            <li>{{ document.csvfile.name }}</li>
-            <form action="{% url 'app:selected' %}" method="POST">
+                            <input id="csvfile" type="hidden" name="csvfile" value="{{ document.csvfile.url }}">
+                            <input type="submit" class="btn" value="{{ document.csvfile.name }}">
+                        </form>
+                        <br>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No documents.</p>
+            {% endif %}
+
+        </div>
+
+        <div class="col s6">
+
+            <!-- Upload form. Note enctype attribute! -->
+            <form action="{% url 'app:list' %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
+                <p>{{ form.non_field_errors }}</p>
 
-                <input id="csvfile" type="hidden" name="csvfile" value="{{ document.csvfile.url }}">
-                <input type="submit" class="btn" value="Select this file">
+                <p>{{ form.csvfile.label_tag }} {{ form.csvfile.help_text }}</p>
+
+                <p>
+                    {{ form.csvfile.errors }}
+                    {{ form.csvfile }}
+                </p>
+
+                <p><input type="submit" class="btn" value="Upload"/></p>
             </form>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No documents.</p>
-{% endif %}
+        </div>
 
-<!-- Upload form. Note enctype attribute! -->
-<form action="{% url 'app:list' %}" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <p>{{ form.non_field_errors }}</p>
-
-    <p>{{ form.csvfile.label_tag }} {{ form.csvfile.help_text }}</p>
-
-    <p>
-        {{ form.csvfile.errors }}
-        {{ form.csvfile }}
-    </p>
-
-    <p><input type="submit" value="Upload"/></p>
-</form>
-
-
+    </div>
 {% endblock content %}

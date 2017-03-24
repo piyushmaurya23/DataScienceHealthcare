@@ -1,0 +1,300 @@
+Age,Sex,BodyPart,Symptom_1,Symptom_2,Disease_1,Disease_2
+13,Male,Scalp,Agitation,Anxiety,Drug Withdrawal,panic Attack
+14,Male,Scalp,Apathy,Bleeding,Child Abuse,Injury
+15,,Scalp,Bald Spots,Anxiety,Alopecia,panic Attack
+16,,Scalp,,Britttle Hair,Child Abuse,Alopecia
+17,Male,Scalp,Confusion,,Low Blood Sugar,Bipolar Disorder
+13,Female,Scalp,Agitation,Anxiety,,panic Attack
+14,Female,Scalp,Apathy,Bleeding,Child Abuse,Injury
+15,Female,Scalp,Bald Spots,,Alopecia,panic Attack
+16,Female,Scalp,Apathy,Britttle Hair,Child Abuse,Alopecia
+17,Female,Scalp,Confusion,,Low Blood Sugar,Bipolar Disorder
+13,Male,Eye,Blank ,,,injury
+14,Male,Eye,Blinking Eye,Blindness,Eye Injury,Brain Tumor
+15,Male,Eye,Blurred Vision,Bulging Eyes,,Hyperthiroidism
+16,Male,Eye,Broken bone,Dry Eye,Broken Eye Socket,Wind Exposure
+17,Male,Eye,Eye Irritation,Eye rolling Back,Contact Lens use,Fainting
+13,Female,Eye,Blank Stare,Bleeding,Epilepsy,injury
+14,Female,Eye,Blinking Eye,Blindness,Eye Injury,Brain Tumor
+15,Female,Eye,,Bulging Eyes,Eye Injury,Hyperthiroidism
+16,Female,Eye,Broken bone,Dry Eye,Broken Eye Socket,Wind Exposure
+17,Female,Eye,Eye Irritation,Eye rolling Back,,Fainting
+13,Male,,Bleeding,Blank Stare,injury,Epilepsy
+14,Male,Face,Swelling,Pain,Mumps,Dental Abscess
+15,Male,Face,Lump ,Bulg,Abscess,
+16,Male,Face,Muscles Cramp,Spasms,Tetany,
+17,Male,Face,Numbness,Tingling,Cold Exposure,Burn(Heat or fire)
+13,Female,Face,Bleeding,Blank Stare,injury,Epilepsy
+14,Female,Face,Swelling,Pain,Mumps,Dental Abscess
+15,Female,Face,Lump ,Bulg,Abscess,Abscess
+16,Female,Face,Muscles Cramp,Spasms,Tetany,Tetany
+17,Female,Face,Numbness,Tingling,Cold Exposure,Burn(Heat or fire)
+13,Male,Jaw,Jaw locking,Pain,Broken Jaw,Dental Abscess
+14,Male,Jaw,Drainege,pus,Abscess,Abscess
+15,Male,Jaw,Lump ,Bulg,Truma,injury
+16,Male,Jaw,Swelling,Bruising,mumps,injury
+17,Male,Jaw,Discoloration,Enlarged,injury,Mumps
+13,Female,Jaw,Jaw locking,Pain,Broken Jaw,Dental Abscess
+14,Female,Jaw,Drainege,Pus,Abscess,Abscess
+15,Female,Jaw,Lump ,Bulg,Truma,injury
+16,Female,Jaw,Swelling,Bruising,mumps,injury
+17,Female,Jaw,Discoloration,Enlarged,injury,Mumps
+13,Male,Arm,Bleeding,Drainege,injury,Abscess
+14,Male,Arm,Pus,Bulg,Abscess,injury
+15,Male,Arm,Swelling,Discoloration,mumps,injury
+16,Male,Arm,Numbness,Tingling,Burn,Burn(Heat or fire)
+17,Male,Arm,Weakness,Pain,Muscle Strain,Muscle Strain
+13,Female,Arm,Bleeding,Drainege,injury,Abscess
+14,Female,Arm,Pus,Bulg,Abscess,injury
+15,Female,Arm,Swelling,Discoloration,mumps,Injury
+16,Female,Arm,Numbness,Tingling,Burn,Burn(Heat or fire)
+17,Female,Arm,Weakness,Pain,Muscle Strain,Muscle Strain
+18,Male,Thigh,Bleeding,Bulging Vens,injury,Vericose Veins
+19,Male,Thigh,Weakness,warm to touch,Muscle Strain,Abscess
+20,Male,Thigh,Swelling,Discoloration,mumps,Injury
+21,Male,Thigh,pus,Bulg,Abscess,Injury
+22,Male,Thigh,Bleeding,Drainege,injury,Abscess
+23,Male,Thigh,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+24,Male,Thigh,Bruising,Discoloration,Muscle Strain,Injury
+25,Male,Thigh,Pain,Disconfort,Muscle Strain,Muscle Strain
+26,Male,Thigh,Unable to move leg,Bruising,Fractured,Injury
+27,Male,Thigh,Unable to Wear Weight,Muscle Cramp,Fractured,leg cramps
+28,Male,Thigh,Tenderness to touch,Spasms,Abscess,leg cramps
+29,Male,Thigh,Stiffness,Bulging Veins,Muscle Strain,Blood Clot
+30,Male,Thigh,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+18,Female,Thigh,Bleeding,Burging veins,injury,Vericose Veins
+19,Female,Thigh,Weakness,warm to touch,Muscle Strain,Abscess
+20,Female,Thigh,Swelling,Discoloration,mumps,Injury
+21,Female,Thigh,pus,bulg,Abscess,Injury
+22,Female,Thigh,Bleeding,Drainege,injury,Abscess
+23,Female,Thigh,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+24,Female,Thigh,Bruising,Disconfort,Muscle Strain,Muscle Strain
+25,Female,Thigh,pain,Discoloration,injury,Muscle Strain
+26,Female,Thigh,Unable to move leg,Bruising,Fractured,Injury
+27,Female,Thigh,Unable to Wear Weight,Muscle Cramp,Fractured,leg cramps
+28,Female,Thigh,Tenderness to touch,Spasms,Abscess,leg cramps
+29,Female,Thigh,Stiffness,bulging,Muscle Strain,Blood Clot
+30,Female,Thigh,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+18,Male,shin,Bleeding,Burging veins,injury,Vericose Veins
+19,Male,shin,Pain,bulg,injury,Injury
+20,Male,shin,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+21,Male,shin,Tenderness to touch,Spasms,Abscess,leg cramps
+22,Male,shin,Stiffness,bulging,Muscle Strain,Blood Clot
+23,Male,shin,Pus,Discoloration,Abscess,Injury
+24,Male,shin,Unable to move leg,Bruising,Fractured,Injury
+18,Female,shin,Unable to Wear Weight,Muscle Cramp,Fractured,leg cramps
+19,Female,shin,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+20,Female,shin,Swelling,Disconfort,Mumps,Muscle Strain
+21,Female,shin,Bruising,Bulging,injury,Blood Clot
+22,Female,shin,spasms,Tingling,leg Cramps,Burn(Heat or fire)
+23,Female,shin,Tenderness to touch,Muscle Cramp,Abscess,leg cramps
+24,Female,shin,Visible Deformity,warm to touch,Fractured,Abscess
+18,Male,foot,Bleeding,Burging veins,injury,Vericose Veins
+19,Male,foot,Pain,bulg,injury,Injury
+20,Male,foot,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+21,Male,foot,Tenderness to touch,Spasms,Abscess,leg cramps
+22,Male,foot,Stiffness,bulging,Muscle Strain,Blood Clot
+23,Male,foot,Pus,Discoloration,Abscess,Injury
+24,Male,foot,Unable to move leg,Bruising,Fractured,Injury
+18,Female,foot,Unable to Wear Weight,Muscle Cramp,Mucolopolysaccheridosis,leg cramps
+19,Female,foot,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+20,Female,foot,Swelling,Disconfort,Mumps,Muscle Strain
+21,Female,foot,Bruising,Bulging,injury,Blood Clot
+22,Female,foot,spasms,Tingling,leg Cramps,Burn(Heat or fire)
+23,Female,foot,Tenderness to touch,Muscle Cramp,Abscess,leg cramps
+24,Female,foot,Visible Deformity,warm to touch,Fractured,Abscess
+25,Male,Knee,Joint Aches,Burging veins,Mucolopolysaccheridisis,Vericose Veins
+26,Male,Knee,Joint Instability,bulg,Acl Knee injury,Injury
+27,Male,Knee,Difficulty Walking,Tingling,Acl Knee injury,Burn(Heat or fire)
+28,Male,Knee,Difficulty moving joint,Spasms,Acl Knee injury,leg cramps
+29,Male,Knee,joint Pain,bulging,Acl Knee injury,Blood Clot
+30,Male,Knee,Morning Joint Stifness,Discoloration,Exercise,Injury
+31,Male,Knee,Gaurding Joint,Bruising,Acl Knee injury,Injury
+32,Male,Knee,Favouring joint,Muscle Cramp,Acl Knee injury,leg cramps
+33,Male,Knee,Popping from joint,Decreased Movement,Acl Knee injury,Muscle Strain
+34,Male,Knee,Snapping Sound,Disconfort,Acl Knee injury,Muscle Strain
+35,Male,Knee,Pain,Bulging,injury,Blood Clot
+25,Female,Knee,Visible Deformity,warm to touch,Fractured,Abscess
+26,Female,Knee,Joint Aches,Burging veins,Mucolopolysaccheridisis,Vericose Veins
+27,Female,Knee,Joint Instability,bulg,Acl Knee injury,Injury
+28,Female,Knee,Difficulty Walking,Tingling,Acl Knee injury,Burn(Heat or fire)
+29,Female,Knee,Difficulty moving joint,Spasms,Acl Knee injury,leg cramps
+30,Female,Knee,joint Pain,bulging,Acl Knee injury,Blood Clot
+31,Female,Knee,Morning Joint Stifness,Discoloration,Exercise,Injury
+32,Female,Knee,Gaurding Joint,Bruising,Acl Knee injury,Injury
+33,Female,Knee,Favouring joint,Muscle Cramp,Acl Knee injury,leg cramps
+34,Female,Knee,Popping from joint,Decreased Movement,Acl Knee injury,Muscle Strain
+35,Female,Knee,Snapping Sound,Disconfort,Acl Knee injury,Muscle Strain
+25,Male,Toes,Cold Feet,Muscle Cramp,Cold Exposure,leg cramps
+26,Male,Toes,Color Change,Decreased Movement,Cold Exposure,Muscle Strain
+27,Male,Toes,Joint Instability,Disconfort,Cold Exposure,Muscle Strain
+28,Male,Toes,Difficulty Walking,Bulging,Cold Exposure,Blood Clot
+29,Male,Toes,Difficulty moving joint,Tingling,injury,Burn(Heat or fire)
+30,Male,Toes,joint Pain,Muscle Cramp,Cold Exposure,leg cramps
+31,Male,Toes,Morning Joint Stifness,warm to touch,Excercise,Abscess
+32,Male,Toes,Gaurding Joint,Burging veins,Cold Exposure,Vericose Veins
+33,Male,Toes,Favouring joint,bulg,Cold Exposure,Injury
+34,Male,Toes,Popping from joint,Tingling,Cold Exposure,Burn(Heat or fire)
+35,Male,Toes,Snapping Sound,Spasms,Cold Exposure,leg cramps
+25,Female,Toes,Cold Feet,Muscle Cramp,Cold Exposure,leg cramps
+26,Female,Toes,Color Change,Decreased Movement,Cold Exposure,Muscle Strain
+27,Female,Toes,Joint Instability,Disconfort,Cold Exposure,Muscle Strain
+28,Female,Toes,Difficulty Walking,Bulging,Cold Exposure,Blood Clot
+29,Female,Toes,Difficulty moving joint,Tingling,injury,Burn(Heat or fire)
+30,Female,Toes,joint Pain,Muscle Cramp,Cold Exposure,leg cramps
+31,Female,Toes,Morning Joint Stifness,warm to touch,Excercise,Abscess
+32,Female,Toes,Gaurding Joint,Burging veins,Cold Exposure,Vericose Veins
+33,Female,Toes,Favouring joint,bulg,Cold Exposure,Injury
+34,Female,Toes,Popping from joint,Tingling,Cold Exposure,Burn(Heat or fire)
+35,Female,Toes,Snapping Sound,Spasms,Cold Exposure,leg cramps
+36,Male,Upper Abdomen,Constipation,Drainege,Depression,Abscess
+37,Male,Upper Abdomen,Nausea,Bulg,Food Poisoning,injury
+38,Male,Upper Abdomen,Vomiting,Discoloration,Food Poisoning,Injury
+39,Male,Upper Abdomen,Pressure,Tingling,Gastroentiritis,Burn(Heat or fire)
+40,Male,Upper Abdomen,Foolness,Pain,Gastroentiritis,Muscle Strain
+41,Male,Upper Abdomen,Stomach Cramp,Drainege,Gastroentiritis,Vericose Veins
+42,Male,Upper Abdomen,Swelling,Bulg,Muscle Strain,Abscess
+43,Male,Upper Abdomen,upset Stomach,Discoloration,Gastritis,Injury
+44,Male,Upper Abdomen,distended Stomach,Tingling,Gastritis,Injury
+36,Female,Upper Abdomen,Constipation,Drainege,Depression,Abscess
+37,Female,Upper Abdomen,Nausea,Bulg,Food Poisoning,injury
+38,Female,Upper Abdomen,Vomiting,Discoloration,Food Poisoning,Injury
+39,Female,Upper Abdomen,Pressure,Tingling,Gastroentiritis,Burn(Heat or fire)
+40,Female,Upper Abdomen,Foolness,Pain,Gastroentiritis,Muscle Strain
+41,Female,Upper Abdomen,Stomach Cramp,Drainege,Gastroentiritis,Vericose Veins
+42,Female,Upper Abdomen,Swelling,Bulg,Muscle Strain,Abscess
+43,Female,Upper Abdomen,upset Stomach,Discoloration,Gastritis,Injury
+44,Female,Upper Abdomen,distended Stomach,Tingling,Gastritis,Injury
+35,Male,Lower Abdomen,Constipation,Drainege,Depression,Abscess
+36,Male,Lower Abdomen,Nausea,Bulg,Food Poisoning,injury
+37,Male,Lower Abdomen,Vomiting,Discoloration,Food Poisoning,Injury
+38,Male,Lower Abdomen,Pressure,Tingling,Gastroentiritis,Burn(Heat or fire)
+39,Male,Lower Abdomen,Foolness,Pain,Gastroentiritis,Muscle Strain
+40,Male,Lower Abdomen,Stomach Cramp,Drainege,Gastroentiritis,Vericose Veins
+41,Male,Lower Abdomen,Swelling,Bulg,Muscle Strain,Abscess
+42,Male,Lower Abdomen,upset Stomach,Discoloration,Gastritis,Injury
+43,Male,Lower Abdomen,distended Stomach,Tingling,Gastritis,Injury
+44,Male,Lower Abdomen,Drainege,Pus,Abscess,Abscess
+35,Female,Lower Abdomen,Constipation,Drainege,Depression,Abscess
+36,Female,Lower Abdomen,Nausea,Bulg,Food Poisoning,injury
+37,Female,Lower Abdomen,Vomiting,Discoloration,Food Poisoning,Injury
+38,Female,Lower Abdomen,Pressure,Tingling,Gastroentiritis,Burn(Heat or fire)
+39,Female,Lower Abdomen,Foolness,Pain,Gastroentiritis,Muscle Strain
+40,Female,Lower Abdomen,Stomach Cramp,Drainege,Gastroentiritis,Vericose Veins
+41,Female,Lower Abdomen,Swelling,Bulg,Muscle Strain,Abscess
+42,Female,Lower Abdomen,upset Stomach,Discoloration,Gastritis,Injury
+43,Female,Lower Abdomen,distended Stomach,Tingling,Gastritis,Injury
+44,Female,Lower Abdomen,Drainege,Pus,Abscess,Abscess
+45,Male,Upper Spine,Curved Spine,Numbness,Scoliosis,Burn(Heat or fire)
+46,Male,Upper Spine,Hunched Posture,Tingling,Kyposis,Burn(Heat or fire)
+47,Male,Upper Spine,Stooped Posture,Pain,Kyposis,Muscle Strain
+48,Male,Upper Spine,Lump ,Disconfort,Abscess,Muscle Strain
+49,Male,Upper Spine,Bulge,Stiffness Movement,Abscess,Muscle Strain
+50,Male,Upper Spine,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+51,Male,Upper Spine,Tenderness to touch,pus,Abscess,Allergic Reaction
+52,Male,Upper Spine,Drainege,Spasms,Allergic Reaction,Muscle Strain
+53,Male,Upper Spine,Visible Deformity,Bruising,Fractured,Muscle Strain
+54,Male,Upper Spine,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+45,Female,Upper Spine,Curved Spine,Numbness,Scoliosis,Burn(Heat or fire)
+46,Female,Upper Spine,Hunched Posture,Tingling,Kyposis,Burn(Heat or fire)
+47,Female,Upper Spine,Stooped Posture,Pain,Kyposis,Muscle Strain
+48,Female,Upper Spine,Lump ,Disconfort,Abscess,Muscle Strain
+49,Female,Upper Spine,Bulge,Stiffness Movement,Abscess,Muscle Strain
+50,Female,Upper Spine,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+51,Female,Upper Spine,Tenderness to touch,pus,Abscess,Allergic Reaction
+52,Female,Upper Spine,Drainege,Spasms,Allergic Reaction,Muscle Strain
+53,Female,Upper Spine,Visible Deformity,Bruising,Fractured,Muscle Strain
+54,Male,Lower Spine,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+45,Male,Lower Spine,Curved Spine,Numbness,Scoliosis,Burn(Heat or fire)
+46,Male,Lower Spine,Hunched Posture,Tingling,Kyposis,Burn(Heat or fire)
+47,Male,Lower Spine,Stooped Posture,Pain,Kyposis,Muscle Strain
+48,Male,Lower Spine,Lump ,Disconfort,Abscess,Muscle Strain
+49,Male,Lower Spine,Bulge,Stiffness Movement,Abscess,Muscle Strain
+50,Male,Lower Spine,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+51,Male,Lower Spine,Tenderness to touch,pus,Abscess,Allergic Reaction
+52,Male,Lower Spine,Drainege,Spasms,Allergic Reaction,Muscle Strain
+53,Male,Lower Spine,Visible Deformity,Bruising,Fractured,Muscle Strain
+54,Male,Lower Spine,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+45,Female,Lower Spine,Curved Spine,Numbness,Scoliosis,Burn(Heat or fire)
+46,Female,Lower Spine,Hunched Posture,Tingling,Kyposis,Burn(Heat or fire)
+47,Female,Lower Spine,Stooped Posture,Pain,Kyposis,Muscle Strain
+48,Female,Lower Spine,Lump ,Disconfort,Abscess,Muscle Strain
+49,Female,Lower Spine,Bulge,Stiffness Movement,Abscess,Muscle Strain
+50,Female,Lower Spine,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+51,Female,Lower Spine,Tenderness to touch,pus,Abscess,Allergic Reaction
+52,Female,Lower Spine,Drainege,Spasms,Allergic Reaction,Muscle Strain
+53,Female,Lower Spine,Visible Deformity,Bruising,Fractured,Muscle Strain
+54,Female,Lower Spine,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+55,Male,Palm,Cold Hand,Excessive Sweating,Cold Exposure,Acrocyanosis
+56,Male,Palm,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+57,Male,Palm,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+58,Male,Palm,Color Change,Decreased Movement,Cold Exposure,Muscle Strain
+59,Male,Palm,Bruising,Bulging,injury,Blood Clot
+60,Male,Palm,Muscle Twitching,Pain,Epilepsy,peripheral Neuropathy
+61,Male,Palm,Drainege,Spasms,Allergic Reaction,Muscle Strain
+62,Male,Palm,Visible Deformity,Bruising,Fractured,Muscle Strain
+63,Male,Palm,Bulge,Stiffness Movement,Abscess,Muscle Strain
+64,Male,Palm,pus,bulg,Abscess,Injury
+55,Female,Palm,Cold Hand,Excessive Sweating,Cold Exposure,Acrocyanosis
+56,Female,Palm,Muscles Cramp,Discoloration,Muscle Strain,Muscle Strain
+57,Female,Palm,Swelling,Decreased Movement,Muscle Strain,Muscle Strain
+58,Female,Palm,Color Change,Decreased Movement,Cold Exposure,Muscle Strain
+59,Female,Palm,Bruising,Bulging,injury,Blood Clot
+60,Female,Palm,Muscle Twitching,Pain,Epilepsy,peripheral Neuropathy
+61,Female,Palm,Drainege,Spasms,Allergic Reaction,Muscle Strain
+62,Female,Palm,Visible Deformity,Bruising,Fractured,Muscle Strain
+63,Female,Palm,Bulge,Stiffness Movement,Abscess,Muscle Strain
+64,Female,Palm,pus,bulg,Abscess,Injury
+55,Male,Shoulder,Joint Aches,Burging veins,Mucolopolysaccheridisis,Vericose Veins
+56,Male,Shoulder,Joint Instability,bulg,Muscle Strain,Injury
+57,Male,Shoulder,Lump ,Tingling,Abscess,Burn(Heat or fire)
+58,Male,Shoulder,Difficulty moving joint,Spasms,Muscle Strain,Heat cramps
+59,Male,Shoulder,joint Pain,bulging,Muscle Strain,Blood Clot
+60,Male,Shoulder,Morning Joint Stifness,Discoloration,Exercise,Injury
+61,Male,Shoulder,Gaurding Joint,Bruising,Muscle Strain,Injury
+62,Male,Shoulder,Favouring joint,Muscle Cramp,Muscle Strain,Heat cramps
+63,Male,Shoulder,Popping from joint,Decreased Movement,Rotator Cutt injury,Muscle Strain
+64,Male,Shoulder,Snapping Sound,Disconfort,Rotator Cutt injury,Muscle Strain
+55,Female,Shoulder,Joint Aches,Burging veins,Mucolopolysaccheridisis,Vericose Veins
+56,Female,Shoulder,Joint Instability,bulg,Muscle Strain,Injury
+57,Female,Shoulder,Lump ,Tingling,Abscess,Burn(Heat or fire)
+58,Female,Shoulder,Difficulty moving joint,Spasms,Muscle Strain,Heat cramps
+59,Female,Shoulder,joint Pain,bulging,Muscle Strain,Blood Clot
+60,Female,Shoulder,Morning Joint Stifness,Discoloration,Exercise,Injury
+61,Female,Shoulder,Gaurding Joint,Bruising,Muscle Strain,Injury
+62,Female,Shoulder,Favouring joint,Muscle Cramp,Muscle Strain,Heat cramps
+63,Female,Shoulder,Popping from joint,Decreased Movement,Rotator Cutt injury,Muscle Strain
+64,Female,Shoulder,Snapping Sound,Disconfort,Rotator Cutt injury,Muscle Strain
+7,Male,Calf,Bleeding,Bulging Vens,injury,Vericose Veins
+8,Male,Calf,Weakness,warm to touch,Muscle Strain,Abscess
+9,Male,Calf,Swelling,Discoloration,mumps,Injury
+10,Male,Calf,pus,Bulg,Abscess,Injury
+11,Male,Calf,Bleeding,Drainege,injury,Abscess
+12,Male,Calf,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+7,Female,Calf,Bleeding,Bulging Vens,injury,Vericose Veins
+8,Female,Calf,Weakness,warm to touch,Muscle Strain,Abscess
+9,Female,Calf,Swelling,Discoloration,mumps,Injury
+10,Female,Calf,pus,Bulg,Abscess,Injury
+11,Female,Calf,Bleeding,Drainege,injury,Abscess
+12,Female,Calf,Broken bone,Tingling,Physical Abuse,Burn(Heat or fire)
+7,Male,ankle,Bleeding,Bulging Vens,injury,Vericose Veins
+8,Male,ankle,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+9,Male,ankle,Unable to move leg,Bruising,Fractured,Injury
+10,Male,ankle,Unable to Wear Weight,Muscle Cramp,Fractured,leg cramps
+11,Male,ankle,Tenderness to touch,Spasms,Abscess,leg cramps
+12,Male,ankle,Stiffness,bulging,Muscle Strain,Blood Clot
+7,Female,ankle,Bleeding,Bulging Vens,injury,Vericose Veins
+8,Female,ankle,Numbness,Decreased Movement,Chemical Burns,Muscle Strain
+9,Female,ankle,Unable to move leg,Bruising,Fractured,Injury
+10,Female,ankle,Unable to Wear Weight,Muscle Cramp,Fractured,leg cramps
+11,Female,ankle,Tenderness to touch,Spasms,Abscess,leg cramps
+12,Female,ankle,Stiffness,bulging,Muscle Strain,Blood Clot
+3,Male,Neck(Front),Bleeding,Bulging Vens,injury,Vericose Veins
+4,Male,Neck(Front),Choking,Gagging,Swallowed Object,Swallowed Object
+5,Male,Neck(Front),Cough,Choking On Food,Common cold,Eating too Quickly
+6,Male,Neck(Front),Difficulty Talking,Hoarse Voice,Asthma(Child),Goiter
+3,Female,Neck(Front),Bleeding,Bulging Vens,injury,Vericose Veins
+4,Female,Neck(Front),Choking,Gagging,Swallowed Object,Swallowed Object
+5,Female,Neck(Front),Cough,Choking On Food,Common cold,Eating too Quickly
+6,Female,Neck(Front),Difficulty Talking,Hoarse Voice,Asthma(Child),Goiter
+65,Male,Upper Abdomen,Constipation,Intentional Vomiting,Depression(Adult),Eating Disorder

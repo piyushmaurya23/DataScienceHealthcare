@@ -55,6 +55,7 @@ def computation(request):
         csvfile = request.POST.get('csvfile')
 
     df = pd.read_csv(csvfile)
+    df = df.dropna()
     numerics = ['int8', 'int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     numeric_df = df.select_dtypes(include=numerics)
 
@@ -84,6 +85,7 @@ def visualisation(request):
         csvfile = request.POST.get('csvfile')
 
     df = pd.read_csv(csvfile)
+    df = df.dropna()
     numerics = ['int8', 'int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     non_numeric_df = df.select_dtypes(exclude=numerics)
     non_numeric_list = non_numeric_df.columns.values
@@ -110,6 +112,7 @@ def graph(request):
         attribute = request.POST.get('attribute')
 
     df = pd.read_csv(csvfile)
+    df = df.dropna()
 
     image = BytesIO()
     sns.set_style("dark")
@@ -119,3 +122,14 @@ def graph(request):
     plot_url = base64.b64encode(image.getvalue())
 
     return render(request, 'graph.html', {'plot_url': plot_url})
+
+
+def learning(request):
+    if request.method == "POST":
+        csvfile = request.POST.get('csvfile')
+
+    context = {
+        
+    }
+
+    return render(request, 'learning.html', context)

@@ -3,30 +3,38 @@
 {% block content %}
 
 
-{{ csvfile }}
-{{ csvpath }}
-<form action="{% url 'app:computation' %}" method="POST">
-    {% csrf_token %}
+    <div class="row">
+        <div class="col s4">
+            <form action="{% url 'app:computation' %}" method="POST">
+                {% csrf_token %}
 
-    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
-    <input type="submit" class="btn" value="Computation">
-</form>
+                <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+                <input type="submit" class="btn" value="Computation">
+            </form>
+        </div>
 
-<form action="{% url 'app:visualisation' %}" method="POST">
-    {% csrf_token %}
+        <div class="col s4">
 
-    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
-    <input type="submit" class="btn" value="Visualisation">
-</form>
 
-{% comment %}
-<form action="{% url 'app:learning' %}" method="POST">
-    {% csrf_token %}
+            <form action="{% url 'app:visualisation' %}" method="POST">
+                {% csrf_token %}
 
-    <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
-    <input type="submit" class="btn" value="Machine Learning">
-</form>
-{% endcomment %}
+                <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+                <input type="submit" class="btn" value="Visualisation">
+            </form>
+        </div>
+
+        <div class="col s4">
+
+           {% comment %} <form action="{% url 'app:learning' %}" method="POST">
+                {% csrf_token %}
+
+                <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
+                <input type="submit" class="btn" value="Machine Learning">
+            </form>{% endcomment %}
+        </div>
+
+    </div>
 
 
 {% endblock content %}
