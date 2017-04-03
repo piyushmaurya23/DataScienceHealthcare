@@ -26,12 +26,12 @@
 
         <div class="col s4">
 
-           {% comment %} <form action="{% url 'app:learning' %}" method="POST">
+            <form action="{% url 'app:learning' %}" method="POST">
                 {% csrf_token %}
 
                 <input id="csvfile" type="hidden" name="csvfile" value="{{ csvpath }}">
                 <input type="submit" class="btn" value="Machine Learning">
-            </form>{% endcomment %}
+            </form>
         </div>
 
     </div>

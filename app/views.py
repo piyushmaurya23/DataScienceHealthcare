@@ -7,9 +7,12 @@ import matplotlib.pyplot as plt
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
-
 from .models import Document
 from .forms import DocumentForm
+from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+from sklearn import tree
+from sklearn.metrics import accuracy_score
 
 def list(request):
     # Handle file upload
@@ -129,8 +132,30 @@ def learning(request):
     if request.method == "POST":
         csvfile = request.POST.get('csvfile')
 
+        df = pd.read_csv(csvfile)
+        df = df.dropna()
+        le = preprocessing.LabelEncoder()
+        features = df.columns.values
+    for feature in features:
+        le.fit(df[feature])
+        df[feature] = le.transform(df[feature])
+    train, test = train_test_split(df, test_size=0.05)
+    train_features = train[['Age', 'Sex', 'BodyPart', 'Symptom_1', 'Symptom_2']].values
+    target = train['Disease_1'].values
+    my_tree = tree.DecisionTreeClassifier()
+    my_tree = my_tree.fit(train_features, target)
+    X_features = ['Age', 'Sex', 'BodyPart', 'Symptom_1', 'Symptom_2']
+    X_test = test[X_features]
+    y_test = test['Disease_1']
+    y_test_array = y_test.as_matrix()
+    X_test_array = X_test.as_matrix()
+    prediction = my_tree.predict(X_test_array)
+
+    accuracy = accuracy_score(y_test_array, prediction)
+
+
     context = {
-        
+        'accuracy': accuracy,
     }
 
     return render(request, 'learning.html', context)
