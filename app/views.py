@@ -11,6 +11,9 @@ from .forms import DocumentForm
 from sklearn import preprocessing, tree
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
 
 def list(request):
     # Handle file upload
@@ -141,20 +144,42 @@ def learning(request):
     train, test = train_test_split(df, test_size=0.05, random_state=42)
     train_features = train[['Age', 'Sex', 'BodyPart', 'Symptom_1', 'Symptom_2']].values
     target = train['Disease_1'].values
-    my_tree = tree.DecisionTreeClassifier()
-    my_tree = my_tree.fit(train_features, target)
     X_features = ['Age', 'Sex', 'BodyPart', 'Symptom_1', 'Symptom_2']
     X_test = test[X_features]
     y_test = test['Disease_1']
     y_test_array = y_test.as_matrix()
     X_test_array = X_test.as_matrix()
-    prediction = my_tree.predict(X_test_array)
 
-    accuracy = accuracy_score(y_test_array, prediction) * 100
+    my_tree = tree.DecisionTreeClassifier()
+    my_tree = my_tree.fit(train_features, target)
+    prediction_dt = my_tree.predict(X_test_array)
+    accuracy_dt = accuracy_score(y_test_array, prediction_dt) * 100
 
+    neigh = KNeighborsClassifier()
+    neigh.fit(train_features, target)
+    prediction_neigh = neigh.predict(X_test_array)
+    accuracy_neigh = accuracy_score(y_test_array, prediction_neigh) * 100
+
+    ada = AdaBoostClassifier()
+    ada.fit(train_features, target)
+    prediction_ada = ada.predict(X_test_array)
+    accuracy_ada = accuracy_score(y_test_array, prediction_ada) * 100
+
+    rf = RandomForestClassifier()
+    rf.fit(train_features, target)
+    prediction_rf = rf.predict(X_test_array)
+    accuracy_rf = accuracy_score(y_test_array, prediction_rf) * 100
+
+    # mlp = MLPClassifier()
+    # mlp.fit(train_features, target)
+    # prediction_mlp = mlp.predict(X_test_array)
+    # accuracy_mlp = accuracy_score(y_test_array, prediction_mlp) * 100
 
     context = {
-        'accuracy': accuracy,
+        'accuracy_dt': accuracy_dt,
+        'accuracy_neigh': accuracy_neigh,
+        'accuracy_ada': accuracy_ada,
+        'accuracy_rf': accuracy_rf,
     }
 
     return render(request, 'learning.html', context)

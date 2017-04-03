@@ -4,13 +4,19 @@
     <table class="striped responsive-table">
         <thead>
             <tr>
-                <th>Decision Tree</th>
+                <th>DecisionTreeClassifier</th>
+                <th>KNeighborsClassifier</th>
+                <th>AdaBoostClassifier</th>
+                <th>RandomForestClassifier</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>{{ accuracy }}</td>
+                <td>{{ accuracy_dt }}</td>
+                <td>{{ accuracy_neigh }}</td>
+                <td>{{ accuracy_ada }}</td>
+                <td>{{ accuracy_rf }}</td>
             </tr>
         </tbody>
     </table>
