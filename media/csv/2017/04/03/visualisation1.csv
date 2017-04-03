@@ -1,0 +1,29 @@
+Age,Sex,BodyPart,Symptom_1,Symptom_2,Disease_1,Disease_2
+13,Male,Scalp,Agitation,Anxiety,Drug Withdrawal,panic Attack
+14,Male,Scalp,Apathy,Bleeding,Child Abuse,Injury
+15,Male,Scalp,Bald Spots,Anxiety,Alopecia,panic Attack
+16,Male,Scalp,Apathy,Britttle Hair,Child Abuse,Alopecia
+17,Male,Scalp,Confusion,Delusions,Low Blood Sugar,Bipolar Disorder
+13,Female,Scalp,Agitation,Anxiety,Drug Withdrawal,panic Attack
+14,Female,Scalp,Apathy,Bleeding,Child Abuse,Injury
+15,Female,Scalp,Bald Spots,Anxiety,Alopecia,panic Attack
+16,Female,Scalp,Apathy,Britttle Hair,Child Abuse,Alopecia
+17,Female,Scalp,Confusion,Delusions,Low Blood Sugar,Bipolar Disorder
+13,Male,Eye,Blank Stare,Bleeding,Epilepsy,injury
+14,Male,Eye,Blinking Eye,Blindness,Eye Injury,Brain Tumor
+15,Male,Eye,Blurred Vision,Bulging Eyes,Eye Injury,Hyperthiroidism
+16,Male,Eye,Broken bone,Dry Eye,Broken Eye Socket,Wind Exposure
+17,Male,Eye,Eye Irritation,Eye rolling Back,Contact Lens use,Fainting
+13,Female,Eye,Blank Stare,Bleeding,Epilepsy,injury
+14,Female,Eye,Blinking Eye,Blindness,Eye Injury,Brain Tumor
+15,Female,Eye,Blurred Vision,Bulging Eyes,Eye Injury,Hyperthiroidism
+16,Female,Eye,Broken bone,Dry Eye,Broken Eye Socket,Wind Exposure
+17,Female,Eye,Eye Irritation,Eye rolling Back,Contact Lens use,Fainting
+13,Male,Face,Bleeding,Blank Stare,injury,Epilepsy
+14,Male,Face,Swelling,Pain,Mumps,Dental Abscess
+15,Male,Face,Lump ,Bulg,Abscess,Abscess
+16,Male,Face,Muscles Cramp,Spasms,Tetany,Tetany
+17,Male,Face,Numbness,Tingling,Cold Exposure,Burn(Heat or fire)
+13,Female,Face,Bleeding,Blank Stare,injury,Epilepsy
+14,Female,Face,Swelling,Pain,Mumps,Dental Abscess
+15,Female,Face,Lump ,Bulg,Abscess,Abscess
