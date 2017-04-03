@@ -1,7 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p>
-        {{ accuracy }}
-    </p>
+    <table class="striped responsive-table">
+        <thead>
+            <tr>
+                <th>Decision Tree</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>{{ accuracy }}</td>
+            </tr>
+        </tbody>
+    </table>
 {% endblock content %}
+
+

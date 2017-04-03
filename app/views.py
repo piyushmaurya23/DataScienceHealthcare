@@ -1,17 +1,15 @@
-import os
+import os, base64
 import pandas as pd
 import seaborn as sns
-from io import BytesIO
-import base64
 import matplotlib.pyplot as plt
+from io import BytesIO
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from .models import Document
 from .forms import DocumentForm
-from sklearn import preprocessing
+from sklearn import preprocessing, tree
 from sklearn.model_selection import train_test_split
-from sklearn import tree
 from sklearn.metrics import accuracy_score
 
 def list(request):
@@ -139,7 +137,7 @@ def learning(request):
     for feature in features:
         le.fit(df[feature])
         df[feature] = le.transform(df[feature])
-    train, test = train_test_split(df, test_size=0.05)
+    train, test = train_test_split(df, test_size=0.05, random_state=42)
     train_features = train[['Age', 'Sex', 'BodyPart', 'Symptom_1', 'Symptom_2']].values
     target = train['Disease_1'].values
     my_tree = tree.DecisionTreeClassifier()
@@ -151,7 +149,7 @@ def learning(request):
     X_test_array = X_test.as_matrix()
     prediction = my_tree.predict(X_test_array)
 
-    accuracy = accuracy_score(y_test_array, prediction)
+    accuracy = accuracy_score(y_test_array, prediction) * 100
 
 
     context = {

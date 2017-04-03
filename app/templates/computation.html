@@ -2,23 +2,26 @@
 
 {% block content %}
 
-    <table>
-        <tr>
-            <th>Attribute</th>
-            <th>Mean</th>
-            <th>Median</th>
-            <th>Standard Deviation</th>
-        </tr>
-
-        {% for num,mean,median,std in numlist %}
+    <table class="striped responsive-table">
+        <thead>
             <tr>
-                <td>{{ num }}</td>
-                <td>{{ mean }}</td>
-                <td>{{ median }}</td>
-                <td>{{ std }}</td>
+                <th>Attribute</th>
+                <th>Mean</th>
+                <th>Median</th>
+                <th>Standard Deviation</th>
             </tr>
-        {% endfor %}
+        </thead>
 
+        <tbody>
+            {% for num,mean,median,std in numlist %}
+                <tr>
+                    <td>{{ num }}</td>
+                    <td>{{ mean }}</td>
+                    <td>{{ median }}</td>
+                    <td>{{ std }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
     </table>
 
 {% endblock content %}
