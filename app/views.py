@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import seaborn as sns
 from io import BytesIO
@@ -9,7 +10,6 @@ from django.core.urlresolvers import reverse
 
 from .models import Document
 from .forms import DocumentForm
-
 
 def list(request):
     # Handle file upload
@@ -39,8 +39,9 @@ def selected(request):
     # csvfile = request.GET.get('csvfile')
     if request.method == "POST":
         csvfile = request.POST.get('csvfile')
-    home = '/home/piyush/Devel/finalProject'
-    csvpath = home + csvfile
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    # home = '/home/piyush/Devel/finalProject'
+    csvpath = BASE_DIR + csvfile
 
     context = {
         'csvfile': csvfile,
