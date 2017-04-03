@@ -119,6 +119,7 @@ def graph(request):
     image = BytesIO()
     sns.set_style("dark")
     sns.countplot(df[attribute])
+    plt.xticks(rotation=90)
     plt.savefig(image, format='png')
     image.seek(0)
     plot_url = base64.b64encode(image.getvalue())
