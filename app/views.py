@@ -122,7 +122,9 @@ def graph(request):
     sns.set_style("dark")
     sns.countplot(df[attribute])
     plt.xticks(rotation=90)
-    plt.savefig(image, format='png')
+    figure = plt.gcf()
+    figure.set_size_inches(9, 7)
+    plt.savefig(image, format='png', dpi=100)
     image.seek(0)
     plot_url = base64.b64encode(image.getvalue())
 
