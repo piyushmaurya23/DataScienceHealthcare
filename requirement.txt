@@ -1,0 +1,9 @@
+# Install packages by:  $ pip install -r requirements.txt
+
+Django
+pandas
+seaborn
+matplotlib
+numpy
+scipy
+sklearn
