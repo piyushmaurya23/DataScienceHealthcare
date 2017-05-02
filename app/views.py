@@ -1,4 +1,6 @@
 import os, base64
+import matplotlib
+matplotlib.use('Agg')
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -13,6 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
+
 
 def list(request):
     # Handle file upload
